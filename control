@@ -1,0 +1,9 @@
+Package: null.leptos.iobat
+Name: iobat
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Battery temperature, as provided by IOKit
+Maintainer: Leptos <leptos.0.null@gmail.com>
+Author: Leptos <leptos.0.null@gmail.com>
+Section: System
+Tag: role::hacker
