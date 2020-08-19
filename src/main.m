@@ -55,14 +55,10 @@ int main(int argc, char *argv[]) {
         warningText = (TEMPERATURE_EXTREME_STRING "warm or cold");
         ret = 3;
     } else if ([chargeStatus isEqualToString:@kIOPMBatteryChargeStatusTooHot]) {
-        if (!silent) {
-            warningText = (TEMPERATURE_EXTREME_STRING "warm");
-        }
+        warningText = (TEMPERATURE_EXTREME_STRING "warm");
         ret = 2;
     } else if ([chargeStatus isEqualToString:@kIOPMBatteryChargeStatusTooCold]) {
-        if (!silent) {
-            warningText = (TEMPERATURE_EXTREME_STRING "cold");
-        }
+        warningText = (TEMPERATURE_EXTREME_STRING "cold");
         ret = 1;
     }
     
